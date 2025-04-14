@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Michelle Malis | juliosghost</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuliosGhost Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-
-  <header>
-    <h1>Michelle Malis</h1>
-    <p>@juliosghost</p>
-    <nav>
-      <a href="poems.html">Poems</a>
-      <a href="artworks.html">Artworks</a>
-    </nav>
-  </header>
-
-  <main>
-    <p>Welcome to my digital home. This is where my ghosts live.</p>
-  </main>
-
+    <header>
+        <h1>Welcome to JuliosGhost's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="poems.html">Poems</a></li>
+                <li><a href="artworks.html">Artworks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p>This is my portfolio, where I share my poems and artworks.</p>
+    </section>
+    <footer>
+        <p>© 2025 JuliosGhost</p>
+    </footer>
 </body>
 </html>

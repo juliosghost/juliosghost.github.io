@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Poems</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Poems</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="artworks.html">Artworks</a>
-    </nav>
-  </header>
-
-  <main>
-    <p>[Add your poems here]</p>
-  </main>
+    <header>
+        <h1>Poems</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p>Here are my poems:</p>
+        <!-- Add your poems here -->
+    </section>
+    <footer>
+        <p>© 2025 JuliosGhost</p>
+    </footer>
 </body>
 </html>

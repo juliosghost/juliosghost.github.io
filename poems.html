@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poems</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poems | JULIOS GHOST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Poems</h1>
-        <nav>
-            <ul>
-                <a href="index.html" class="back-home">Back Home</a>
+  <header>
+    <h1><span>JULIOS</span><br><span>GHOST</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="back-home">Back Home</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <!-- Add your poems here -->
-        
-    </section>
+  <section id="poems-container">
+    <!-- Poems will be loaded here from poems.json -->
+  </section>
+
+  <script>
+    fetch('poems.json')
+      .then(response => response.json())
+      .then(data => {
+        const poemsContainer = document.getElementById('poems-container');
+        data.forEach(poem => {
+          const poemElement = document.createElement('div');
+          poemElement.classList.add('poem-item');
+          poemElement.innerHTML = `<h2>${poem.title}</h2><pre>${poem.content}</pre>`;
+          poemsContainer.appendChild(poemElement);
+        });
+      })
+      .catch(error => console.log('Error loading poems:', error));
+  </script>
 </body>
 </html>

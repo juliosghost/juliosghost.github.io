@@ -69,4 +69,22 @@ body, html {
     display: block;
     margin-bottom: 0.2rem; /* Adjust this value to reduce or increase space */
   }
+
+  /* Styling of poems from poems.json */ 
   
+  .poem-item {
+    font-family: 'Spectral', serif;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase; /* makes all letters capital */
+    white-space: pre-wrap; /* preserves original spacing and line breaks */
+    margin-bottom: 2rem;
+  }
+  
+  .poem-item h2 {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; /* creates a double space between title and poem */
+    font-family: 'Spectral', serif;
+  }

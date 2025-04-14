@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poems</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Poems</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="artworks.html">Artworks</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>[Add your poems here]</p>
+  </main>
+</body>
+</html>

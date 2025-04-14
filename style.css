@@ -22,7 +22,7 @@ body, html {
     letter-spacing: 0.15em;
     margin: 0;
     text-transform: uppercase; /* This makes it all caps */
-    line-height: 0.8; /* Reduced line height to bring JULIOS and GHOST closer */
+    line-height: 0.5; /* Reduced line height to bring JULIOS and GHOST closer */
   }
 
   h1 span {

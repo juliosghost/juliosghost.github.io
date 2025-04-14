@@ -24,7 +24,7 @@ body, html {
     text-transform: uppercase; /* This makes it all caps */
     line-height: 0.8; /* Reduced line height to bring JULIOS and GHOST closer */
   }
-  
+
   h1 span {
     display: block;
 }
@@ -60,6 +60,16 @@ body, html {
     opacity: 0.6;
   }
 
+  ul {
+    list-style-type: none; /* Removes bullets from unordered list */
+    padding-left: 0; /* Removes the indentation */
+  }
+  
+  li {
+    display: inline; /* Makes list items appear inline (on the same line) */
+  }
+  
+
   /* Styling for the split "JULIOS GHOST" title */
 
   h1 {
@@ -78,17 +88,15 @@ body, html {
   
   .poem-item {
     font-family: 'Spectral', serif;
-    font-size: 12px;
+    font-size: 14px; /* Adjust size as needed */
     color: white;
-    text-transform: uppercase; /* makes all letters capital */
-    white-space: pre-wrap; /* preserves original spacing and line breaks */
-    margin-bottom: 2rem;
-  }
-  
-  .poem-item h2 {
-    font-size: 12px;
-    color: white;
+    line-height: 1.6; /* Adds spacing between lines for readability */
+    white-space: pre-wrap; /* This preserves original line breaks */
+    margin-bottom: 1.5rem; /* Space between each poem */
+}
+
+.poem-item h2 {
+    font-size: 20px; /* Adjust title size */
+    margin-bottom: 1rem; /* Space between title and poem */
     text-transform: uppercase;
-    margin-bottom: 1.5rem; /* creates a double space between title and poem */
-    font-family: 'Spectral', serif;
-  }
+}

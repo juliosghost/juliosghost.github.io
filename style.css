@@ -52,25 +52,19 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
-  display: inline-block;
-}
 
-nav a,
+/* Back Home link styling (as text, not a button) */
 .back-home {
-  text-decoration: none;
-  color: #0278d5;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: 2px solid #0278d5;
-  border-radius: 5px;
-  transition: background-color 0.3s, opacity 0.3s ease;
+  font-family: 'Bigger Display', sans-serif; /* Apply Bigger Display font */
+  color: white; /* White text color */
+  font-size: 1.2rem; /* Font size for the text */
+  text-decoration: none; /* Remove underline */
+  letter-spacing: 0.2em; /* Spacing between letters */
+  transition: opacity 0.3s ease;
 }
 
-nav a:hover,
 .back-home:hover {
-  background-color: #0278d5;
-  color: white;
+  opacity: 0.6; /* Hover effect for fading */
 }
 
 /* Inline list styling (used in some pages) */

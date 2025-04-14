@@ -23,6 +23,7 @@ body, html {
     margin: 0;
     text-transform: uppercase; /* This makes it all caps */
   }
+
   
   .links {
     margin-top: 3rem;
@@ -56,13 +57,16 @@ body, html {
   }
 
   /* Styling for the split "JULIOS GHOST" title */
-h1 {
+
+  h1 {
     font-size: 10vw;
     letter-spacing: 0.15em;
     margin: 0;
+    line-height: 1; /* Reduce line height */
   }
   
   h1 span {
     display: block;
+    margin-bottom: 0.2rem; /* Adjust this value to reduce or increase space */
   }
   

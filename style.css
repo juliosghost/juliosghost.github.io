@@ -1,4 +1,4 @@
-/* Reset some defaults */
+/* Reset & base styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,9 +8,9 @@ body, html {
     font-family: 'Helvetica Neue', sans-serif;
   }
   
-  /* Center the text vertically & horizontally */
-  .centered {
+  .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -18,8 +18,26 @@ body, html {
   }
   
   h1 {
-    font-size: 6rem;
-    letter-spacing: 0.1em;
+    font-size: 12vw;
     margin: 0;
+    letter-spacing: 0.15em;
   }
   
+  .links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    transition: opacity 0.3s ease;
+  }
+  
+  .links a:hover {
+    opacity: 0.6;
+  }
+   

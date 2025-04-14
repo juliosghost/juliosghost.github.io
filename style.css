@@ -86,7 +86,8 @@ body, html {
 
   /* Styling of poems from poems.json */ 
   
-  .poem-item {
+/* Ensure the Spectral font is applied to both title and content */
+.poem-item {
     font-family: 'Spectral', serif;
     font-size: 14px; /* Adjust size as needed */
     color: white;
@@ -95,7 +96,9 @@ body, html {
     margin-bottom: 1.5rem; /* Space between each poem */
 }
 
+/* Title styling */
 .poem-item h2 {
+    font-family: 'Spectral', serif; /* Ensure Spectral is applied here too */
     font-size: 20px; /* Adjust title size */
     margin-bottom: 1rem; /* Space between title and poem */
     text-transform: uppercase;

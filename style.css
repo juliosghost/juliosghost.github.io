@@ -11,7 +11,7 @@ body, html {
   padding: 0;
   overflow-x: hidden; /* Prevents horizontal scroll */
   max-width: 100vw;    /* Prevents content from going beyond viewport width */
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   font-family: 'Bigger Display', sans-serif; /* Replaced Helvetica Neue with Bigger Display */
 }
@@ -54,7 +54,7 @@ nav ul {
 /* Back Home link styling (as text, not a button) */
 .back-home {
   font-family: 'Bigger Display', sans-serif; /* Apply Bigger Display font */
-  color: #333;; /* Black text color */
+  color: #000000;; /* Black text color */
   font-size: 1.2rem; /* Font size for the text */
   text-decoration: none; /* Remove underline */
   letter-spacing: 0.2em; /* Spacing between letters */

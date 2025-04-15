@@ -24,28 +24,30 @@
   </nav>
 
   <script>
+    // Fetch poems from the poems.json file
     fetch('poems.json')
-      .then(response => response.json())
+      .then(response => response.json()) // Parse the JSON file
       .then(data => {
         const poemsContainer = document.getElementById('poems-container');
-        const loadingMessage = document.getElementById('loading-message');
-        loadingMessage.style.display = 'none'; // Hide loading message
-  
+
+        // Loop through each poem and render it dynamically
         data.forEach(poem => {
           const poemElement = document.createElement('div');
           poemElement.classList.add('poem-item');
-          poemElement.innerHTML = `<h2>${poem.title}</h2><pre>${poem.content}</pre>`;
+          
+          // Build the HTML structure for each poem
+          poemElement.innerHTML = `
+            <h2>${poem.title}</h2>
+            <pre>${poem.content}</pre>
+          `;
+
+          // Append the poem to the container
           poemsContainer.appendChild(poemElement);
         });
       })
       .catch(error => {
         console.error('Error loading poems:', error);
-        const poemsContainer = document.getElementById('poems-container');
-        poemsContainer.innerHTML = '<p>Sorry, we couldn’t load the poems at the moment.</p>';
       });
   </script>
-
 </body>
 </html>
-
-  

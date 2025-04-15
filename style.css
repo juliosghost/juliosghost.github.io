@@ -54,7 +54,7 @@ nav ul {
 /* Back Home link styling (as text, not a button) */
 .back-home {
   font-family: 'Bigger Display', sans-serif; /* Apply Bigger Display font */
-  color: white; /* White text color */
+  color: rgb(0, 0, 0); /* Black text color */
   font-size: 1.2rem; /* Font size for the text */
   text-decoration: none; /* Remove underline */
   letter-spacing: 0.2em; /* Spacing between letters */

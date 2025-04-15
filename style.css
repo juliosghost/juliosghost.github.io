@@ -117,3 +117,17 @@ li {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+
+/* Page-specific styles for Poems and Artworks */
+.poems-page, .artworks-page {
+    background-color: white;
+    color: black;
+  }
+  
+  .poems-page .poem-item,
+  .artworks-page .artwork-item,
+  .poems-page h2,
+  .artworks-page h2 {
+    color: black;
+  }
+  

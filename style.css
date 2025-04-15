@@ -115,7 +115,7 @@ li {
   white-space: pre-wrap;
   margin-bottom: 1.5rem;
   word-break: break-word;
-  color: white;
+  color: rgb(0, 0, 0);
   overflow-wrap: break-word;  /* Ensures long words break */
   max-width: 100%;            /* Keeps it inside its container */
   box-sizing: border-box;     /* Ensures padding doesn't push it out */
@@ -127,7 +127,7 @@ li {
   font-family: 'monospace', serif; 
   white-space: pre-wrap; /* Ensures that text respects the whitespace and line breaks but also wraps when the line is too long */
   word-wrap: break-word; /* Allows long words to break and wrap to the next line if they don't fit */
-  color: #333; /* Sets the text color to a dark gray */
+  color: #ffffff; /* Sets the text color to a dark gray */
   font-size: 1.1rem; /* Sets the font size to 1.1 rem (relative to the root font size, slightly larger than normal) */
   max-width: 100%; /* Ensures it doesn’t overflow */
   box-sizing: border-box;

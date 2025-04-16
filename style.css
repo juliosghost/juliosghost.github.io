@@ -167,6 +167,13 @@ li {
     padding-left: 0.5rem;
   }
   
+  .thumbnail {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
 
 
 /* Adjust font size for smaller screens */

@@ -166,14 +166,13 @@ li {
 }
 
 .artwork-caption {
-  position: absolute;  /* This makes it relative to the .artwork-display */
+  margin-top: 1rem;  /* Moves the description below the image */
   bottom: 1rem;  /* Adjust this value to move the caption up/down */
   left: 0;  /* Aligns the caption to the left edge of the image */
   font-family: 'monospace', serif;
   font-style: italic;
   font-size: 11px;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.7);  /* Optional for contrast */
   padding: 0.3rem 0.6rem;
   width: 100%;  /* Ensures it spans the entire width of the image */
 }

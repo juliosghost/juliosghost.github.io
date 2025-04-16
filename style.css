@@ -133,10 +133,10 @@ li {
   word-break: break-word;
 }
 
-  .artwork-display {
+.artwork-display {
     width: 100%;
     margin: 0 auto;
-    padding: 1rem; /* This gives a small margin on both sides */
+    padding: 1rem;
     box-sizing: border-box;
   }
   
@@ -145,7 +145,6 @@ li {
     height: auto;
     display: block;
   }
-  
   
   .artwork-caption {
     font-family: 'monospace', serif;

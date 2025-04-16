@@ -133,6 +133,17 @@ li {
   word-break: break-word;
 }
 
+/* artwork title link on artworks page to look like text */
+
+.artwork-item {
+  text-decoration: none;     /* Removes underline */
+  color: #000000;            /* Sets text color to black */
+}
+
+.artwork-item:hover {
+  opacity: 0.8;              /* Optional: subtle hover effect */
+}
+
 .artwork-display {
     width: 100%;
     margin: 0 auto;

@@ -161,11 +161,14 @@ li {
   }
   
   .artwork-display img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
     max-height: 90vh; /* scales to 90% of viewport height */
     display: block;
+    margin: 0 auto;
   }
+  
   
   .artwork-caption {
     font-family: 'monospace', serif;

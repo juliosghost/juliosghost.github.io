@@ -186,7 +186,6 @@ li {
   }
 
   .artworks-page header h1 {
-    font-size: 2rem; /* Default or desired font size */
     text-align: left; 
     margin-bottom: 1rem; /* Adjust if needed, or remove this if you want the default */
     color: #000000; /* Black text color, or adjust as needed */

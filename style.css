@@ -133,6 +133,14 @@ li {
   word-break: break-word;
 }
 
+.full-artwork {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: block;
+  }
+  
+
 /* Adjust font size for smaller screens */
 @media (max-width: 768px) {
   .poem-item pre {

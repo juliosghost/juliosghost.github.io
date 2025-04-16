@@ -133,6 +133,14 @@ li {
   word-break: break-word;
 }
 
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
 /* artwork title link on artworks page to look like text */
 
 .artwork-item {
@@ -166,7 +174,7 @@ li {
     color: #000000;
     padding-left: 0.5rem;
   }
-  
+
   .thumbnail {
     width: 150px;
     height: auto;

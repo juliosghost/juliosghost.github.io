@@ -143,6 +143,13 @@ li {
   align-items: start; /* important to align all items to top */
 }
 
+.poem-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .poem-thumb {
   display: flex;
   flex-direction: column;

@@ -12,16 +12,19 @@
     <h1>Poems</h1>
   </header>
 
-  <!-- Container where poems will be dynamically injected -->
-  <section id="poems-container" class="poem-grid">
-    <!-- Poems will be loaded here from poems.json -->
-  </section>
+  <div class="poem-wrapper">
+    <section id="poems-container">
+      <!-- poems get injected here -->
+    </section>
+  
+    <nav>
+      <ul>
+        <li><a href="index.html" class="back-home">HOME</a></li>
+      </ul>
+    </nav>
+  </div>
+  
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="back-home">HOME</a></li>
-    </ul>
-  </nav>
 
   <script>
     fetch('poems.json')

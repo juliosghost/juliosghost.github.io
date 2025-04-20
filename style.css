@@ -124,7 +124,7 @@ li {
 */
 
 .poem-item pre {
-  font-family: 'monospace', serif;
+  font-family: 'Spectral', serif;
   white-space: pre-wrap;
   word-wrap: break-word;
   color: #000000; /* Black preformatted text */
@@ -187,7 +187,7 @@ li {
   color: #000000;
 }
 
-/* .poem-page pre {
+.poem-page pre {
   font-family: 'Spectral', serif;
   font-size: 1.1rem;
   white-space: pre-wrap;
@@ -195,7 +195,7 @@ li {
   color: #000000;
   line-height: 1.6;
 }
- */
+
 
 
 

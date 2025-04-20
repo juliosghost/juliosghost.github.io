@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="poem-page">
+
+  <main>
+    <h1 id="poem-title"></h1>
+    <pre id="poem-content"></pre>
+  </main>
+
+  <nav>
+    <ul>
+      <li><a href="poems.html" class="back-home">TO POEMS</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    // Get the page name (e.g., poem-0.html)
+    const page = window.location.pathname.split('/').pop();
+    const index = parseInt(page.match(/\d+/)[0]); // Extract number from "poem-0.html"
+
+    fetch('poems.json')
+      .then(response => response.json())
+      .then(data => {
+        const poem = data[index];
+        if (poem) {
+          document.getElementById('poem-title').textContent = poem.title;
+          document.getElementById('poem-content').textContent = poem.content;
+        } else {
+          document.getElementById('poem-title').textContent = "Poem not found.";
+        }
+      })
+      .catch(error => {
+        document.getElementById('poem-title').textContent = "Failed to load poem.";
+        console.error('Error loading poems:', error);
+      });
+  </script>
+</body>
+</html>
+ 

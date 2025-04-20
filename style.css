@@ -293,3 +293,26 @@ nav {
     justify-items: center;
   }
 }
+
+
+@media (max-width: 768px) {
+  .poem-grid {
+    justify-items: center; /* Centers the grid items (poem thumbnails) on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller items on mobile */
+    gap: 1rem; /* Reduced gap between items for mobile */
+  }
+
+  .poem-thumb {
+    margin: 0.5rem; /* Less margin for mobile */
+  }
+
+  .poem-square {
+    width: 150px; /* Smaller squares on mobile */
+    height: 150px; /* Smaller height */
+  }
+
+  .poem-title {
+    font-size: 1.2rem; /* Slightly smaller title text on mobile */
+  }
+}
+

@@ -159,6 +159,31 @@ li {
   text-decoration: underline;
 }
 
+.poem-page {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.poem-page h1 {
+  font-family: 'Spectral', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.poem-page pre {
+  font-family: 'monospace', serif;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
 
 
 .artwork-grid {

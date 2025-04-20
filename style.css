@@ -174,14 +174,14 @@ li {
 }
 
 .poem-page h1 {
-  font-family: 'Spectral', serif;
+  font-family: 'Bigger Display', serif;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #000000;
 }
 
 .poem-page pre {
-  font-family: 'monospace', serif;
+  font-family: 'Spectral', serif;
   font-size: 1.1rem;
   white-space: pre-wrap;
   word-wrap: break-word;

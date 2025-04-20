@@ -134,6 +134,13 @@ li {
   word-break: break-word;
 }
 
+.poem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
 .poem-thumb {
   display: flex;
   flex-direction: column;
@@ -180,7 +187,7 @@ li {
   color: #000000;
 }
 
-.poem-page pre {
+/* .poem-page pre {
   font-family: 'Spectral', serif;
   font-size: 1.1rem;
   white-space: pre-wrap;
@@ -188,7 +195,7 @@ li {
   color: #000000;
   line-height: 1.6;
 }
-
+ */
 
 
 

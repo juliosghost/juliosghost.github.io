@@ -149,15 +149,21 @@ li {
 }
 
 .poem-title {
-  color: white;
-  font-family: 'Spectral', serif;
+  font-family: 'Bigger Display', sans-serif;
+  font-size: 1.5rem; /* Adjust as needed — same as artwork thumbnails */
+  color: #000000;
   text-decoration: none;
-  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
 }
 
 .poem-title:hover {
-  text-decoration: underline;
+  opacity: 0.8;
+  text-decoration: none; /* or underline if you prefer */
 }
+
 
 .poem-page {
   background-color: #ffffff; /* White background */

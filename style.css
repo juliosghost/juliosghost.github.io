@@ -108,7 +108,7 @@ li {
   word-wrap: break-word;
 }
 
-/* Poem styling */
+/* Poem styling 
 .poem-item {
   font-family: 'monospace', serif;
   font-size: 14px;
@@ -116,11 +116,12 @@ li {
   white-space: pre-wrap;
   margin-bottom: 1.5rem;
   word-break: break-word;
-  color: #000000; /* Black text for poems */
+  color: #000000; /* Black text for poems 
   overflow-wrap: break-word;
   max-width: 100%;
   box-sizing: border-box;
-}
+} 
+*/
 
 .poem-item pre {
   font-family: 'monospace', serif;
@@ -132,6 +133,32 @@ li {
   box-sizing: border-box;
   word-break: break-word;
 }
+
+.poem-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.poem-square {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-bottom: 0.5rem;
+}
+
+.poem-title {
+  color: white;
+  font-family: 'Spectral', serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.poem-title:hover {
+  text-decoration: underline;
+}
+
 
 
 .artwork-grid {

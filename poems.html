@@ -24,30 +24,36 @@
   </nav>
 
   <script>
-    // Fetch poems from the poems.json file
     fetch('poems.json')
-      .then(response => response.json()) // Parse the JSON file
+      .then(response => response.json())
       .then(data => {
         const poemsContainer = document.getElementById('poems-container');
-
-        // Loop through each poem and render it dynamically
-        data.forEach(poem => {
+  
+        data.forEach((poem, index) => {
           const poemElement = document.createElement('div');
-          poemElement.classList.add('poem-item');
-          
-          // Build the HTML structure for each poem
+          poemElement.classList.add('poem-thumb');
+  
+          // Create a slug or ID for the poem page
+          const poemSlug = `poem-${index}.html`;
+  
           poemElement.innerHTML = `
-            <h2>${poem.title}</h2>
-            <pre>${poem.content}</pre>
+            <div class="poem-square"></div>
+            <a href="${poemSlug}" class="poem-title">${poem.title}</a>
           `;
-
-          // Append the poem to the container
+  
           poemsContainer.appendChild(poemElement);
+  
+          // Optionally: Save poem data locally for static pages
+          // This part is useful for later generation
+          localStorage.setItem(poemSlug, JSON.stringify(poem));
         });
       })
       .catch(error => {
         console.error('Error loading poems:', error);
       });
   </script>
+  
 </body>
 </html>
+
+

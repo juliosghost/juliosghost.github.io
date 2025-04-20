@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="poem-page">
+  <nav>
+    <ul>
+      <li><a href="poems.html" class="back-home">← Back to Poems</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="poem-title"></h1>
+    <pre id="poem-content"></pre>
+  </main>
+
+  <script>
+    // Read the page name (e.g., poem-0.html)
+    const page = window.location.pathname.split('/').pop();
+    const poem = JSON.parse(localStorage.getItem(page));
+
+    if (poem) {
+      document.getElementById('poem-title').textContent = poem.title;
+      document.getElementById('poem-content').textContent = poem.content;
+    } else {
+      document.getElementById('poem-title').textContent = "Poem not found.";
+    }
+  </script>
+</body>
+</html>

@@ -301,7 +301,8 @@ nav {
 @media (max-width: 768px) {
   .poem-grid {
     justify-items: center; /* Centers the grid items (poem thumbnails) on mobile */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller items on mobile */
+    grid-template-columns: 1fr; /* one per row */
+    padding: 1rem;
     gap: 1rem; /* Reduced gap between items for mobile */
   }
 

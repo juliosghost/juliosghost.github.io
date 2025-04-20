@@ -149,6 +149,12 @@ li {
   align-items: center;
 }
 
+.poems-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 
 .poem-thumb {
   display: flex;

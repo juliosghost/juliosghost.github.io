@@ -1,0 +1,21 @@
+<script>
+    const page = window.location.pathname.split('/').pop();
+    const index = parseInt(page.match(/\d+/)[0]); // Get the number from poem-0.html
+  
+    fetch('poems.json')
+      .then(response => response.json())
+      .then(data => {
+        const poem = data[index];
+        if (poem) {
+          document.getElementById('poem-title').textContent = poem.title;
+          document.getElementById('poem-content').textContent = poem.content;
+        } else {
+          document.getElementById('poem-title').textContent = "Poem not found.";
+        }
+      })
+      .catch(error => {
+        document.getElementById('poem-title').textContent = "Failed to load poem.";
+        console.error('Error loading poems:', error);
+      });
+  </script>
+  

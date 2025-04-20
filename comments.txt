@@ -1,0 +1,6 @@
+for future:
+
+find way to generate new poem htmls automatically 
+group poem htmls into one file 
+
+make it so all the titles from json are capitalized automatically so no need to type them capitalized
